@@ -10,7 +10,7 @@ Updates for `man dwm`/`dwm.1` are needed.
 
 ## Patches and features
 
-- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with my build of [dwmblocks](https://github.com/lukesmithxyz/dwmblocks).
+- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with the TANKLINUX build of [dwmblocks](https://github.com/tanklinux/dwm).
 - Reads [xresources](https://dwm.suckless.org/patches/xresources/) colors/variables (i.e. works with `pywal`, etc.).
 - scratchpad: Accessible with <kbd>mod+shift+enter</kbd>.
 - New layouts: bstack, fibonacci, deck, centered master and more. All bound to keys <kbd>super+(shift+)t/y/u/i</kbd>.
