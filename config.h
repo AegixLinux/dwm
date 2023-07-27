@@ -17,12 +17,16 @@ static int smartgaps          = 0;        /* 1 means no outer gap when there is 
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "monospace:size=10", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true"  };
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#770000";
-static char selbgcolor[]            = "#005577";
+static char normbgcolor[]           = "#000b1e";
+static char normbordercolor[]       = "#000b1e";
+/*static char normfgcolor[]           = "#bbbbbb";*/
+static char normfgcolor[]           = "#0abdc6";
+/*static char selfgcolor[]            = "#eeeeee";*/
+static char selfgcolor[]            = "#ea00d9";
+/*static char selbordercolor[]        = "#770000";*/
+static char selbordercolor[]        = "#20B2AA";
+/*static char selbgcolor[]            = "#005577";*/
+static char selbgcolor[]            = "#000b1e";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
