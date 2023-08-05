@@ -17,21 +17,20 @@ static int smartgaps          = 0;        /* 1 means no outer gap when there is 
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "monospace:size=10", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true"  };
-static char normbgcolor[]           = "#000b1e";
-static char normbordercolor[]       = "#000b1e";
-/*static char normfgcolor[]           = "#bbbbbb";*/
-static char normfgcolor[]           = "#0abdc6";
-/*static char selfgcolor[]            = "#eeeeee";*/
-static char selfgcolor[]            = "#ea00d9";
-/*static char selbordercolor[]        = "#770000";*/
-static char selbordercolor[]        = "#20B2AA";
-/*static char selbgcolor[]            = "#005577";*/
-static char selbgcolor[]            = "#000b1e";
+
+static char normbgcolor[]           = "#332E09"; /* dwmblocks unselected sections */
+static char normbordercolor[]       = "#4c4722"; /* border of unselected windows */
+static char normfgcolor[]           = "#e0ded6"; /* font color non-selected dwmblocks */
+static char selfgcolor[]            = "#BA8743"; /* font color of selected tag */
+// static char selbordercolor[]        = "#8e8f8f"; /* border of selected window */
+static char selbordercolor[]        = "#BA8743"; /* border of selected window */
+static char selbgcolor[]            = "#332E09"; /* dwmblocks main color */
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
+
 
 typedef struct {
 	const char *name;
