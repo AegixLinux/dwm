@@ -3,100 +3,87 @@
 .SHIFT_LIST 10p
 ..
 .PARA_SPACE 1m
-.TITLE "\s+(10A Friendly Guide to BARBS!\s0"
-.AUTHOR "\s+5TANKLINUX\s0"
+.TITLE "\s+(10Welcome to TANKLINUX!\s0"
+.AUTHOR "\s+5Tim Beach\s0"
 .DOCTYPE    DEFAULT
 .COPYSTYLE  FINAL
 .PRINTSTYLE TYPESET
 .PT_SIZE 12
 .START
-The contents of this document will soon be updated. For now, it is just a copy of larbs.mom.
-Use vim keys (\f(CWh/j/k/l\fP) to navigate this document.
-Pressing \f(CWs\fP will fit it to window width (\f(CWa\fP to revert).
-\f(CWK\fP and \f(CWJ\fP zoom in and out.
-\f(CWSuper+f\fP to toggle fullscreen.
-\f(CWq\fP to quit.
-\f(CW/\fP to search for text.
-(These are general binds set for \fBzathura\fP, the pdf reader.)
+NOTE: \fIPending further updates, this file borrows heavily from Luke Smith's larbs.mom.\fP
+.SP
+.RULE
+.SP
+.SP
+Start by trying out some key bindings to navigate this document: 
 .LI
 .ITEM
-\f(CWMod+F1\fP will show this document at any time.
+Press \fBs\fP to fit text to your window
+.ITEM 
+Press \fBa\fP to revert text width 
 .ITEM
-By \f(CWMod\fP, I mean the Super Key, usually known as "the Windows Key."
+Navigate the document with \fBh/j/k/l\fP
+.ITEM 
+\fBShift+K\fP and \fBShift+J\fP zooms in and out
+.ITEM 
+\fBUltra+f\fP to toggles fullscreen
+.ITEM
+\fBq\fP to quit
+.ITEM 
+\fB/\fP to search for text
+.ITEM 
+\fBCtrl+r\fP toggles reader mode, inverting the colors
+.ITEM
+\fBUltra+F1\fP shows this document at any time
 .LIST OFF
-.PP
-FAQs are at the end of this document.
-.HEADING 1 "Welcome!"
-.HEADING 2 "Basic goals and principles of this system:"
+By Ultra, I mean the key usually known as the Windows Key. Sometimes it's known as the Super key or the Mod key.
+.HEADING 1 "A Hearty Welcome to You!"
+.HEADING 2 "Principles of the system"
 .LI
 .ITEM
 \fBNaturalness\fP \(en
-Remove the border between mind and matter:
-everything important should be as few keypresses as possible away from you,
-and you shouldn't have to think about what you're doing.
-Immersion.
+If you stick with it, after a while, you'll find the key bindings very sensible and natural; learn to drive this system like a car \f[BI]or a tank\fP and soon you won't even have to think about it
 .ITEM
 \fBEconomy\fP \(en
-Programs should be simple and light on system resources and highly extensible.
-Because of this, many are terminal or small ncurses programs that have all the magic inside of them.
+Simplicity and extensibility
 .ITEM
-\fBKeyboard/vim-centrality\fP \(en
-All terminal programs (and other programs) use vim keys when possible.
-Your hands never need leave the home row or thereabout.
+\fBVim-centricity\fP \(en
+Fingers needn't stray far from the home row 
 .ITEM
-\fBDecentralization\fP \(en
-This system is a web of small, modifiable and replaceable programs that users can easily customize.
+\fBUnix philosophy\fP \(en
+Small programs, each doing one thing well, easily customizable
 .LIST OFF
-.HEADING 2 "General keyboard changes"
+.HEADING 2 "Keyboard optimizations"
 .LI
 .ITEM
-Capslock is a useless key in high quality space.
-It's now remapped.
-If you press it alone, it will function as escape, making vimcraft much more natural,
-but you can also hold it down and it will act as another Windows/super/mod key.
+Capslock is remapped to Escape for convenient vim use.
+If you hold it down and it can act as another \fBUltra\fP key.
 .ITEM
-The menu button (usually between the right Alt and Ctrl) is an alternative Super/Mod button.
-This is to make one-handing on laptops easier.
+The menu button, sometimes between the right Alt and Ctrl, is another alternative \fBUltra\fP key.
 .LIST OFF
 .PP
-If you'd like to change any of these keyboard changes, you need only open and change the \f(CWremaps\fP script.
-All custom scripts in BARBS are located in \f(CW~/.local/bin/\fP.
-Actually, this should go without saying, but \fIeverything\fP here can easily be changed.
-Below in this document, there is information about where to change programs/components.
+These customizations can be found in the \f(CWremaps\fP script along with other custom scripts located in \f(CW~/.local/bin/\fP.
+.HEADING 2 "The suckless top bar"
 .PP
-Additionally, while this isn't a part of the desktop environment, the default editing mode in the shell is using vi bindings.
-If you want to learn more of this, run \f(CWMod+F2\fP and type and select the option for "vi mode in shell".
-This setting can be changed if you don't like it by deleting or commenting out the contents of \f(CW~/.config/shell/inputrc\fP.
-.HEADING 2 "The Status Bar"
+In the top left of your screen, you'll see at least one number corresponding to what dwm calls a "tag" sometimes referred to as a "workspace".
+On the right, you'll see various system status notifiers, displaying information about things like the time, date, battery status, volume, etc.
+Each module on the right of the statusbar is controlled by a script located in \f(CW~/.local/bin/statusbar/\fP.
+You can interact with some modules with your mouse. 
+Hover your cursor over the battery section and scroll up or down to change the brightness. The source code and configuration for the top bar is located here: \f(CW~/.local/src/dwmblocks/\fP. Feel free to tinker with it.
+.HEADING 3 "A note on high definition displays"
 .PP
-To the left, you'll see the numbers of your current workspace/tag(s).
-On the right, you'll see various system status notifiers, the date, volume, even music and local weather if possible, etc.
-Each module on the right of the statusbar is a script located in \f(CW~/.local/bin/statusbar/\fP.
-You can see what they do and modify them from there.
-I'm sure you can figure it out.
-You can also right click on the module to see what it does.
-.PP
-The program dwmblocks is what is run to generate the statusbar from those scripts.
-You can edit its config/source code in \f(CW~/.local/src/dwmblocks/\fP to tell it what scripts/commands you want it to display.
-.HEADING 3 "HiDPI and 4K Displays"
-.PP
-If you have a screen with a very high dots-per-inch, the interface, particularly the status bar at the top may be very small. To change this, you can run \f(CWxrandr --dpi 96\fP, replacing 96 with a higher number, then you can refresh the window manager in the menu at \f(CWsuper+backspace\fP. To make this change persistent after reboot, edit \f(CW~/.xprofile\fP and you will see that same command which you can change to have the dots-per-inch value you want.
-.HEADING 2 "Deeper Tutorials"
+If you have a screen with a very high dots-per-inch, the interface, particularly the status bar at the top may be very small. To change this, you can run \f(CWxrandr --dpi 96\fP, replacing 96 with a higher number, then you can refresh the window manager in the menu at \f(CWUltra+backspace\fP. To make this change persistent after reboot, edit \f(CW~/.xprofile\fP and you will see that same command which you can change to have the dots-per-inch value you want.
+.HEADING 2 "Deeper tutorials"
 .PP
 Press \f(CWmod+F2\fP at any time to get a menu of programs to watch videos about streaming directly from YouTube.
 You can also check the config files for programs which detail a lot of the specific bindings.
-.HEADING 1 "Key Bindings"
+.HEADING 1 "The suckless window manager's key bindings"
 .PP
-The window manager dwm abstractly orders all of your windows into a stack from most important to least based on when you last manipulated it.
-dwm is an easy to use window manager, but you should understand that it makes use of that stack layout.
-If you're not familiar, I recommend you press \f(CWMod+F2\fP and select the "dwm" option to watch my brief tutorial (note that the bindings I discuss in the video are the default dwm binds, which are different (inferior) to those here).
-.PP
-Notice also the case sensitivity of the shortcuts\c
-.FOOTNOTE
-To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound like an obvious and condescending thing to tell you, but there have literally been multiple people (Boomers) who have emailed me asking how to type a capital letter since caps lock isn't enabled.
-.FOOTNOTE OFF
- , Be sure you play around with these. Be flexible with the basic commands and the system will grow on you quick.
-.LI
+TANKLINUX uses dwm, a window manager from suckless that is controlled entirely by the keyboard.
+It abstractly orders all of your windows into a stack from most important to least based on your interactions.
+If you're unfamiliar, it will be fun to wrap your head around how this stack layout works. Play with the default key bindings like you're learning a new instrument.
+.PP 
+.LI 
 .ITEM
 \f(CWMod+Enter\fP \(en Spawn terminal (the default terminal is \f(CWst\fP; run \f(CWman st\fP for more.)
 .ITEM
@@ -149,7 +136,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+o/O\fP \(en Increase/decrease the number of master windows
 .LIST OFF
-.HEADING 2 "Basic Programs"
+.HEADING 2 "Basic programs"
 .LI
 .ITEM
 \f(CWMod+r\fP \(en lf (file browser/manager)
