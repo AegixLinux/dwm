@@ -318,7 +318,7 @@ If you prefer a more brute force approach that will overwrite all your user conf
 You can follow links via the keyboard in this pdf reader by pressing \f(CWf\fP followed by the number that appears on the desired link.
 .LI
 .ITEM
-.PDF_WWW_LINK "mailto:timbeach@protonmail.com" "timbeach@protonmail.com"
+.PDF_WWW_LINK "mailto:tim@timbeach.com" "tim@timbeach.com"
 \(en To get in touch
 .ITEM
 .PDF_WWW_LINK "http://tanklinux.com" "https://tanklinux.com"
