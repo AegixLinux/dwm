@@ -311,8 +311,9 @@ To update your TANKLINUX, there is an alias \f(CWupdate\fP you can run from the 
 Type: \f(CW alias update\fP to see the command it will run.
 .PP
 I don't recommend updating BARBS specifically after it is installed as part of TANKLINUX. 
-BARBS is deployed as a git repository in your home directory, and as such you can git pull changes to it if you wish.
-If you prefer a more brute force approach that will overwrite all your user config files and install any new dependencies, you may just rerun the barbs.sh script, as root, entering the same username, but this is not always guaranteed to go smoothly.
+BARBS is deployed as a git repository in your home directory, if you want to go down that route. Otherwise, you can just run \f(CWbarbs.sh\fP again to reinstall it. 
+If you give it the same user it will overwrite your dot files. 
+If you want to experiment with it, you may run it again and give it a different username writing new dotfiles to the specified user's home directory.
 .HEADING 1 "Some neat links"
 .PP
 You can follow links via the keyboard in this pdf reader by pressing \f(CWf\fP followed by the number that appears on the desired link.
