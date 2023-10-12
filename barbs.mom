@@ -114,7 +114,7 @@ If you're unfamiliar, it will be fun to wrap your head around how this stack lay
 .HEADING 2 "Window layouts"
 .LI
 .ITEM
-\f(CWUltra+t\fP \(en Tiling Ultrae (default)
+\f(CWUltra+t\fP \(en Tiling mode (default)
 .ITEM
 \f(CWUltra+T\fP \(en Bottom stack mode (similar to tiling, but master is on top)
 .ITEM
