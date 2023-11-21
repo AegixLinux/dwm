@@ -3,7 +3,7 @@
 .SHIFT_LIST 10p
 ..
 .PARA_SPACE 1m
-.TITLE "\s+(10Welcome to TANKLINUX!\s0"
+.TITLE "\s+(10Welcome to Aegix!\s0"
 .AUTHOR "\s+5Tim Beach\s0"
 .DOCTYPE    DEFAULT
 .COPYSTYLE  FINAL
@@ -80,7 +80,7 @@ In order to test what value might work for you, run \f(CWxrandr --dpi 96\fP, in 
 .\"You can also check the config files for programs which detail a lot of the specific bindings.
 .HEADING 1 "The suckless window manager's key bindings"
 .PP
-TANKLINUX uses dwm, a window manager from suckless that is controlled entirely by the keyboard.
+Aegix uses dwm, a window manager from suckless that is controlled entirely by the keyboard.
 It abstractly orders all of your windows into a stack from most important to least based on your interactions.
 If you're unfamiliar, it will be fun to wrap your head around how this stack layout works. Play with the default key bindings. Imagine you're learning a new instrument.
 .LI 
@@ -305,12 +305,12 @@ When using the file manager, you can simply hover over an image name and type \f
 Check \f(CW~/.config/x11/xresources\fP for a list of color schemes you can activate or add your own. When you save the file, vim will automatically update the colorscheme. If you'd like these colors activated by default on login, there is a line in \f(CW~/.config/x11/xprofile\fP you can uncomment to allow that.
 .PP
 Or, if you want to use \f(CWwal\fP to automatically generate colorschemes from your wallpapers, just install it and \f(CWsetbg\fP will automatically detect and run it on startup and wallpaper change.
-.HEADING 2 "How do I update BARBS or TANKLINUX?"
+.HEADING 2 "How do I update BARBS or Aegix?"
 .PP
-To update your TANKLINUX, there is an alias \f(CWupdate\fP you can run from the terminal. 
+To update your Aegix, there is an alias \f(CWupdate\fP you can run from the terminal. 
 Type: \f(CW alias update\fP to see the command it will run.
 .PP
-If you want to just get the latest barbs.sh script, you can always get it from \f(CWcurl -LO tanklinux.com/barbs.sh\fP. 
+If you want to just get the latest barbs.sh script, you can always get it from \f(CWcurl -LO aegixlinux.org/barbs.sh\fP. 
 BARBS is deployed as a git repository in your home directory, if you want to go down the git route there. Otherwise, you can just run \f(CWbarbs.sh\fP again to reinstall it. 
 If you give it the same user it will overwrite your dot files. 
 If you want to experiment with it, you may run it again and give it a different username writing new dotfiles to the specified user's home directory.
@@ -322,15 +322,15 @@ You can follow links via the keyboard in this pdf reader by pressing \f(CWf\fP f
 .PDF_WWW_LINK "mailto:timbeach@protonmail.com" "timbeach@protonmail.com"
 \(en To get in touch
 .ITEM
-.PDF_WWW_LINK "http://tanklinux.com" "https://tanklinux.com"
+.PDF_WWW_LINK "http://aegixlinux.org" "https://aegixlinux.org"
 \(en To check in on the project
 .\".ITEM
-.\".PDF_WWW_LINK "https://tanklinux.com/donate" "https://tanklinux.com/donate"
+.\".PDF_WWW_LINK "https://aegixlinux.org/donate" "https://aegixlinux.org/donate"
 .\"\(en To incentivize more development of BARBS!
 .ITEM
-.PDF_WWW_LINK "https://github.com/tanklinux" "https://github.com/tanklinux"
+.PDF_WWW_LINK "https://github.com/aegixlinux" "https://github.com/aegixlinux"
 \(en To check out the source
 .\".ITEM
-.\".PDF_WWW_LINK "http://tanklinux.com/rss.xml" "RSS"
+.\".PDF_WWW_LINK "http://aegixlinux.org/rss.xml" "RSS"
 .\"\(en For updates!
 .LIST OFF

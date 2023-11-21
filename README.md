@@ -1,4 +1,4 @@
-# TANKLINUX dwm
+# Aegix dwm
 
 ## Configuration & Key Bindings
 
@@ -10,7 +10,7 @@ Updates for `man dwm`/`dwm.1` are needed.
 
 ## Patches and features
 
-- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with the TANKLINUX build of [dwmblocks](https://github.com/tanklinux/dwm).
+- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with the aegixlinux build of [dwmblocks](https://github.com/aegixlinux/dwm).
 - Reads [xresources](https://dwm.suckless.org/patches/xresources/) colors/variables (i.e. works with `pywal`, etc.).
 - scratchpad: Accessible with <kbd>mod+shift+enter</kbd>.
 - New layouts: bstack, fibonacci, deck, centered master and more. All bound to keys <kbd>super+(shift+)t/y/u/i</kbd>.
@@ -23,10 +23,10 @@ Updates for `man dwm`/`dwm.1` are needed.
 - [swallow patch](https://dwm.suckless.org/patches/swallow/): if a program run from a terminal would make it inoperable, it temporarily takes its place to save space.
 
 
-## Installation outside of TANKLINUX
+## Installation outside of Aegix
 
 ```bash
-git clone https://github.com/tanklinux/dwm.git
+git clone https://github.com/aegixlinux/dwm.git
 cd dwm
 sudo make install
 ```
