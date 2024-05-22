@@ -4,7 +4,7 @@
 ..
 .PARA_SPACE 1m
 .TITLE "\s+(10Welcome to Aegix!\s0"
-.AUTHOR "\s+5Tim Beach\s0"
+.AUTHOR "\s+5Timothy Beach\s0"
 .DOCTYPE    DEFAULT
 .COPYSTYLE  FINAL
 .PRINTSTYLE TYPESET
