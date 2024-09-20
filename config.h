@@ -242,6 +242,9 @@ static const Key keys[] = {
 	{ MODKEY,			XK_Page_Down,	shiftview,	{ .i = +1 } },
 	{ MODKEY|ShiftMask,		XK_Page_Down,	shifttag,	{ .i = +1 } },
 	{ MODKEY, 			XK_Insert, 	spawn, 		SHCMD("~/.local/bin/snippets-menu") },
+	// The following 2 make it possible to add or remove a snippet using mod+shift+insert and mod+shift+delete respectively
+	{ MODKEY|ShiftMask, XK_Insert, spawn, SHCMD("~/.local/bin/add-snippet-dmenu") },
+	{ MODKEY|ShiftMask, XK_Delete, spawn, SHCMD("~/.local/bin/remove-snippet-dmenu") },
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom /usr/local/share/dwm/barbs.mom -Tpdf | zathura -") },
 	{ MODKEY,			XK_F2,		spawn,		{.v = (const char*[]){ "tutorialvids", NULL } } },
 	{ MODKEY,			XK_F3,		spawn,		{.v = (const char*[]){ "displayselect", NULL } } },
